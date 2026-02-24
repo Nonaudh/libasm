@@ -20,7 +20,7 @@ $(NAME) : $(OBJ)
 	ar rc $(NAME) $(OBJ)
 
 test : all
-	gcc main.c $(NAME)
+	gcc -Iinc main.c $(NAME)
 
 clean :
 	rm -rf $(DBUILD)
