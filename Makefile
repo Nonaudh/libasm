@@ -4,13 +4,13 @@ CFLAGS = -f elf64
 
 NAME = libasm.a
 
-SRC = src/ft_strlen.s
+SRC = src/ft_strlen.s src/ft_strcpy.s
 
 DBUILD = build/
 
 OBJ = $(addprefix $(DBUILD), $(SRC:%.s=%.o))
 
-all : $(NAME)
+all : $(NAME) test
 
 $(DBUILD)%.o : %.s
 	@mkdir -p $(dir $@)
@@ -19,7 +19,7 @@ $(DBUILD)%.o : %.s
 $(NAME) : $(OBJ)
 	ar rc $(NAME) $(OBJ)
 
-test : all
+test :
 	gcc -Iinc main.c $(NAME)
 
 clean :
