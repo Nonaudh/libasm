@@ -1,5 +1,6 @@
 https://medium.com/@leogaudin/libasm-a-guide-to-get-familiar-with-assembly-in-42-830f619f4c5e
 https://aridswolfgang.medium.com/a-beginners-journey-to-understanding-x86-64-assembly-syntax-speaking-the-language-of-the-machine-3f095dceed2f
+https://cs.lmu.edu/~ray/notes/nasmtutorial/
 
 rax = return/index
 rdi = arg1
