@@ -4,13 +4,13 @@ CFLAGS = -f elf64
 
 NAME = libasm.a
 
-SRC = src/ft_strlen.s src/ft_strcpy.s
+SRC = src/ft_strlen.s src/ft_strcpy.s src/ft_strcmp.s
 
 DBUILD = build/
 
 OBJ = $(addprefix $(DBUILD), $(SRC:%.s=%.o))
 
-all : $(NAME) test
+all : $(NAME) test #WOWOWO
 
 $(DBUILD)%.o : %.s
 	@mkdir -p $(dir $@)
