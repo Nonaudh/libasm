@@ -18,7 +18,7 @@ int main(void)
 	// printf("  ret; %d  err; %d\n", ret, errno);
 	// ret = ft_read(-1, test, 10);
 	// printf("  ret; %d  err; %d\n", ret, errno);
-	char *new = ft_strdup(str);
+	char *new = strdup(str);
 	printf("%s\n", new);
 	free(new);
 }

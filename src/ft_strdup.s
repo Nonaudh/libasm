@@ -20,4 +20,7 @@ ft_strdup:
 
 error:
 	pop rdi
+	call __errno_location wrt ..plt
+	mov dword [rax], 12
+	xor rax, rax
 	ret
